@@ -1,0 +1,1 @@
+{"name":"Local: a","url":"/home/vivek/Desktop/ProjectUnknown/frontend/a.py","tests":[{"id":1645707176273,"input":"abcde\nabcd","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/vivek/Desktop/ProjectUnknown/frontend/a.py","group":"local","local":true}
