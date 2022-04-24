@@ -6,7 +6,7 @@ import { HeartIcon as HeartIconFilled }
     from "@heroicons/react/solid"
 import { useState } from 'react';
 
-const UserPost = ({ postImage, likes, comments, commentsCount }) => {
+const UserPost = ({ img, likes, comments, commentsCount }) => {
   const [openModal, setOpenModal] = useState(false);
 
   return (
@@ -16,7 +16,7 @@ const UserPost = ({ postImage, likes, comments, commentsCount }) => {
         likes={likes}
         openModal={openModal}
         setOpenModal={setOpenModal}
-        post={postImage}
+        post={img}
       />
 
       <div
@@ -26,7 +26,7 @@ const UserPost = ({ postImage, likes, comments, commentsCount }) => {
         <img
           onClick={() => setOpenModal(!openModal)}
           className=" w-full object-cover rounded-xl"
-          src={postImage}
+          src={img}
           alt=""
         />
 

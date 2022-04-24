@@ -11,7 +11,6 @@ import {
   XIcon,
 } from "@heroicons/react/outline";
 
-import JSONDATA from "./MOCK_DATA.json";
 import PostImgModal from "./PostImgModal";
 import { Link } from "react-router-dom";
 import ProfileModal from "./ProfileModal";
@@ -104,6 +103,7 @@ const Navbar = () => {
                         </div>
                       );
                     })}
+                    
               </div>
             </div>
           </div>

@@ -17,6 +17,8 @@ import SignUp from "./components/SignUp";
 import { loadUser } from "./Actions/User";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import Account from "./components/Account/Account";
+
 
 function App() {
   const dispatch = useDispatch();
@@ -30,7 +32,10 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={isAuthenticated ? <MainPage /> : <Login />} />
-
+        {/* <Route
+          path="/account"
+          element={isAuthenticated ? <Account /> : <Login />}
+        /> */}
         {/* <Route path="/" element={<MainPage />} /> */}
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />

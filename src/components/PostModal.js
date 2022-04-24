@@ -59,7 +59,7 @@ const PostModal = ({
                   {comments.map((comment) => (
                     <div className=" flex h-[60px]  items-center space-x-2">
                       <img
-                        src="https://imgk.timesnownews.com/media/15906943c06218cb9d67d1855bc6cc5e.jpg"
+                        src={ownerImage}
                         className="h-10  rounded-full cursor-pointer object-contain"
                         alt="profile-pic"
                       />
@@ -83,7 +83,6 @@ const PostModal = ({
                     <BookmarkIcon className="h-7 hover:scale-125 cursor-pointer transition-all duration-150 ease-out mt-3 ml-4 " />
                   </div>
                   <p className="font-bold ">
-                   
                     {likes.map((like) => (
                       <User
                         key={like._id}
